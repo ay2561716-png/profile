@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+
+
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <i class="fas fa-code"></i>
+                    <span>MyPortfolio</span>
+                </a>
+                
+                <div class="nav-links">
+                    <a href="#home" class="active">Home</a>
+                    <a href="#work">Work</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" class="active">Home</a>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm a <span class="hero-highlight">Web Designer</span></h1>
+                <p class="hero-subtitle">Fresh graduate with 3 months internship experience in WordPress. Passionate about creating beautiful, functional websites that make an impact.</p>
+                
+                <!-- Attractive Form -->
+                <div class="attractive-form" id="contact">
+                    <div class="form-header">
+                        <h3>Let's Work Together</h3>
+                        <p>Get in touch for project inquiries or collaborations</p>
+                    </div>
+                    <form id="quickContact">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="form-button">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section class="work" id="work">
+        <div class="container">
+            <h2 class="section-title">My Recent Work</h2>
+            
+            <div class="work-slider">
+                <div class="slider-arrow prev"><i class="fas fa-chevron-left"></i></div>
+                <div class="work-track" id="workTrack">
+                    <!-- Work Card 1 -->
+                    <div class="work-card">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="E-commerce Website" class="work-card-img">
+                        <div class="work-card-content">
+                            <h3 class="work-card-title">Fashion E-commerce Store</h3>
+                            <p class="work-card-desc">Designed and developed a WordPress e-commerce site for a fashion boutique.</p>
+                            <div class="work-card-tags">
+                                <span class="work-card-tag">WordPress</span>
+                                <span class="work-card-tag">WooCommerce</span>
+                                <span class="work-card-tag">Elementor</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Work Card 2 -->
+                    <div class="work-card">
+                        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="Portfolio Website" class="work-card-img">
+                        <div class="work-card-content">
+                            <h3 class="work-card-title">Photographer Portfolio</h3>
+                            <p class="work-card-desc">Created a responsive portfolio website for a professional photographer.</p>
+                            <div class="work-card-tags">
+                                <span class="work-card-tag">HTML/CSS</span>
+                                <span class="work-card-tag">JavaScript</span>
+                                <span class="work-card-tag">GSAP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Work Card 3 -->
+                    <div class="work-card">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Business Website" class="work-card-img">
+                        <div class="work-card-content">
+                            <h3 class="work-card-title">Local Business Website</h3>
+                            <p class="work-card-desc">Built a WordPress site for a local business with booking functionality.</p>
+                            <div class="work-card-tags">
+                                <span class="work-card-tag">WordPress</span>
+                                <span class="work-card-tag">Booking Plugin</span>
+                                <span class="work-card-tag">SEO</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Work Card 4 -->
+                    <div class="work-card">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80" alt="Blog Website" class="work-card-img">
+                        <div class="work-card-content">
+                            <h3 class="work-card-title">Travel Blog</h3>
+                            <p class="work-card-desc">Developed a custom WordPress theme for a travel blogger.</p>
+                            <div class="work-card-tags">
+                                <span class="work-card-tag">WordPress</span>
+                                <span class="work-card-tag">Custom Theme</span>
+                                <span class="work-card-tag">PHP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Work Card 5 -->
+                    <div class="work-card">
+                        <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1136&q=80" alt="Restaurant Website" class="work-card-img">
+                        <div class="work-card-content">
+                            <h3 class="work-card-title">Restaurant Website</h3>
+                            <p class="work-card-desc">Created a mouth-watering website for a local restaurant with online ordering.</p>
+                            <div class="work-card-tags">
+                                <span class="work-card-tag">WordPress</span>
+                                <span class="work-card-tag">Online Ordering</span>
+                                <span class="work-card-tag">Responsive</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Work Card 6 -->
+                    <div class="work-card">
+                        <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Fitness App" class="work-card-img">
+                        <div class="work-card-content">
+                            <h3 class="work-card-title">Fitness App UI</h3>
+                            <p class="work-card-desc">Designed the user interface for a fitness tracking application.</p>
+                            <div class="work-card-tags">
+                                <span class="work-card-tag">UI Design</span>
+                                <span class="work-card-tag">Figma</span>
+                                <span class="work-card-tag">Prototyping</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-arrow next"><i class="fas fa-chevron-right"></i></div>
+            </div>
+            
+            <div class="slider-nav">
+                <div class="slider-dot active" data-index="0"></div>
+                <div class="slider-dot" data-index="1"></div>
+                <div class="slider-dot" data-index="2"></div>
+                <div class="slider-dot" data-index="3"></div>
+                <div class="slider-dot" data-index="4"></div>
+                <div class="slider-dot" data-index="5"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            
+            <div class="skills-grid">
+                <!-- Skill 1 -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-wordpress"></i>
+                    </div>
+                    <h3 class="skill-title">WordPress</h3>
+                    <p class="skill-desc">3 months internship experience building WordPress sites using Elementor and custom themes.</p>
+                </div>
+                
+                <!-- Skill 2 -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3 class="skill-title">HTML/CSS</h3>
+                    <p class="skill-desc">Strong foundation in semantic HTML and modern CSS techniques including Flexbox and Grid.</p>
+                </div>
+                
+                <!-- Skill 3 -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3 class="skill-title">JavaScript</h3>
+                    <p class="skill-desc">Basic knowledge of JavaScript for adding interactivity to websites.</p>
+                </div>
+                
+                <!-- Skill 4 -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="skill-title">Responsive Design</h3>
+                    <p class="skill-desc">Creating websites that look great on all devices using media queries and responsive frameworks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>MyPortfolio</h3>
+                    <p style="color: #94a3b8; margin-bottom: 20px;">Fresh web designer specializing in WordPress and front-end development.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">WordPress Development</a></li>
+                        <li><a href="#">Website Design</a></li>
+                        <li><a href="#">Responsive Design</a></li>
+                        <li><a href="#">Website Maintenance</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> hello@myportfolio.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (123) 456-7890</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Web Street, Design City</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 MyPortfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="style.js"></script>
+</body>
+
+
+
+
+</html>
